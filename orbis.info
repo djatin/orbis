@@ -1,0 +1,4 @@
+name = Orbis
+description = Orbis 
+core = 7.x
+base theme = common
