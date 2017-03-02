@@ -23,7 +23,8 @@
     position:relative
 }
 
-.js-play-btn__text,.js-close-btn__text{
+.js-play-btn__text,
+.js-close-btn__text{
     .visually-hidden();
 }
 
@@ -189,6 +190,9 @@
 
 // end 640px
 });
+.js-splash-video__video-embed{
+    margin-top: 0;
+}
 
 // Tweaks 1104px to make the image cover the video 
 .min-width(69em {
@@ -207,9 +211,73 @@
     .min-width(40em {
         margin: -3em 0 0 -3em;
         position: absolute;
-        top: 33.33333333333333%;
+        top: 8em;
         left: 50%;
         z-index: @zindex-overlay;
-    });
-        
+    });        
+}
+
+.d-section--video-banner.d-section--style-banner-2{
+    .js-splash-video__play-btn {
+        .min-width(40em {
+            top: inherit;
+            left: 46%;
+            bottom: 6.25em;
+            border: none;
+            height: initial;
+            width: initial;
+            padding: .75em 2.5em;
+            color: @black;
+            font-family: @font-stack__arial;
+            background: @Yellow;
+            border-radius: 0;
+            &:after{
+                content: 'Start Tour';
+                display: block;
+                font-weight: 700;
+                text-transform: uppercase;
+            }
+            &:hover{
+                background-color : lighten(@Yellow, 15%);
+            }
+        });
+        .js-play-btn__icon{
+            .visually-hidden();
+        }
+    }
+    .o-splash__wrapper{
+        max-width: 50em;
+        margin: auto;
+        .min-width(40em{
+            padding: 0 1.5em;
+        });
+        .hgroup__title{
+            font-size: 3em;
+            text-shadow: 1px 1px 5px #333;
+        }
+        .hgroup__subtitle{
+            font-size: 1.5em;
+            text-transform: none;
+            font-weight: normal;
+            font-family: @basefont;
+            max-width: 22em;
+            margin: 1em auto;
+        }
+        .o-splash__text{
+            color: @Yellow;
+            padding: .7em 0 .5em 4em;
+            max-width: 45em;
+            text-transform: uppercase;
+            font-family: @font-stack__arial;
+            text-align: left;
+            background: url(../img/video_icon.png) no-repeat left;
+            .min-width(40em{
+                margin-top: 6em;
+            });
+            p{
+                font-weight: 700;
+                margin-top: 0;
+            }
+        }
+    }
 }

@@ -12,17 +12,22 @@
 .contentinfo {
     margin-top: 3em;
     background: @footerbg;
-    color: @footertextcolor   
+    font-family: @font-stack__arial;
+    li{
+        margin: 0 !important;
+        list-style: none !important;
+    }
 }
 
 .contentinfo__wrapper {
-        padding: 6em 1.5em 3.75em;    
+    padding: 3em 1.5em;    
 }
 
 .contentinfo__section-title {
     .gamma ();
     color: @white; 
     text-transform: uppercase;
+    .visually-hidden();
 }
 
 .contentinfo__section-title a {
@@ -31,7 +36,11 @@
 
 .contentinfo p {
     margin-top: 1.84615384615385em;
-    .milli ();
+    font-size: 1em;
+    color: @white;
+}
+.contentinfo__connect{
+    color: @white;
 }
 
 // Component in situ 

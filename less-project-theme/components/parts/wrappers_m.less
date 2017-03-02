@@ -53,10 +53,22 @@ section (semantic wrapper)
     // 768px/48em
 	.min-width(48em; {
 	   //account for navigation
-        padding: 3em 0 6.625em;
+        padding: 1em 0;
 	});
 }
-
+.section__wrapper{
+    padding: 1.5em;
+	.min-width(30em; { 
+        //padding: 3em;   
+    });
+	.min-width(40em; {
+        padding-left: ((100-87.5%)/2);
+        padding-right: ((100-87.5%)/2);  
+    });
+    &.d-section--style-feed{
+        padding: 1% 0;
+    }
+}
 
 
 

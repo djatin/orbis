@@ -75,9 +75,48 @@
            margin-right: auto;
             float: none;
     }
+    .o-media__gallery{
+        margin-left: @gutter;
+    }
     
 });
-
+.d-section--modification-5{
+    .o-media__item{
+        width: 100%;
+        position: relative;
+        .figcaption{
+            .min-width(40em{
+                position: absolute;
+                bottom: 0;
+                text-align: right;
+                padding: .657em 11em .657em .657em;
+                background: fade(@black, 70%);
+                color: @white;
+                margin: 0;
+                width: 100%;
+                font-style: italic;
+            });
+        }
+    }
+    .o-media__body{
+        position: relative;
+        overflow: visible;
+        .hgroup__title{
+            text-align: center;
+        }
+        .the-measure{
+            max-width: 100%;
+        }
+        .o-btn{
+            .min-width(40em{
+                position: absolute;
+                top: -4.2em;
+                margin: 0;
+                right: 0;
+            });
+        }
+    }
+}
 
 // large minor =================================================== */
 // 1152px/72em up

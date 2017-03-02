@@ -24,6 +24,7 @@ infographic__figcaption (wrapper for the text)
 
 .infographic {
     margin-top: 3em;
+    font-family: @font-stack__arial;
     text-align: center;
     &:first-child {
         margin-top: 0;   
@@ -32,22 +33,31 @@ infographic__figcaption (wrapper for the text)
 
 .infographic img {
     margin: 0 auto;
+    width: auto;
 }
 
 .infographic__figcaption {
     // max width for all the text 
     margin: 0 auto;
-    max-width: 18.5em;
+    max-width: 20.5em;
 }
 
 .infographic__title {
     font-weight: 700;
+    font-size: 2.25em;
+    text-transform: uppercase;
 }
 
 .infographic__text {
     min-height: 6em;
-    .epsilon ();
-    color: @grey--light-3;
+    font-size: 1.25em;
+    text-transform: uppercase;
+    p{
+        margin-top: 0;
+        em{
+            color: @Blue;
+        }
+    }
 }
 
 .infographic__btn {
@@ -56,9 +66,35 @@ infographic__figcaption (wrapper for the text)
 
 /* Infographic wrapper ------------------- */
 .section__figure-group {
-    margin: 3em auto;
+    margin: 2em auto 1em;
 }
 
+.d-section--infographics, .d-section--infographics-2{
+    .hgroup__title{
+        text-align: center;
+        font-size: 1.5em;
+        font-family: inherit;
+        font-weight: normal;
+        letter-spacing: .0625em;
+        &:after{
+            display: block;
+            content: '';
+            height: 1px;
+            background: @black;
+            width: 100%;
+            max-width: 15em;
+            margin: .5em auto 0;
+        }
+    }
+}
+.d-section--infographics-2{
+    .infographic__figcaption{
+        max-width: 22.5em;
+    }
+    .infographic__text{
+        text-transform: none;
+    }
+}
 
 // Component in situ 
 

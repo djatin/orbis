@@ -58,31 +58,36 @@
 
 /* Navigation styles ---- */
 
-.menu, .menu li, .menu a {
+.menu, .menu a {
     margin: 0;
     padding: 0;
     list-style: none;
 }
-
+.menu li{
+    padding: 0 3em 0 0;
+}
 
 .menu a, .menu span {
     display: block;
-    padding: 1.25em;
-    font-size: 0.75em;
+    font-size: 1.125em;
     text-decoration: none;
-    &:active, &:focus {
-        outline: 0;
-    }
-    &:active, &:focus, &.active, &.is-active {
-        background: darken(@basecolor, 10%);
-        color: @white;
-    }
-    &:hover {
-        
-        background: @basecolor;
-        color: @whiteonblack;
+    outline: 0;
+    &:active, &:focus, &.active, &.is-active, &:hover {
+        color: lighten(@basecolor,50%);
     }
     
+}
+.global-nav .menu li.last{
+    padding-right: 0;
+    a{
+        padding: .5em 2.5em;
+        background: @Yellow;
+        color: @black;
+        font-weight: 700;
+        &:hover{
+            background: darken(@Yellow, 5%);
+        }
+    }
 }
 
 // Submenu -------------------
@@ -92,13 +97,13 @@
 
 // both 
 .global-nav a, .global-nav span, .utility-nav a {
-    font-family: inherit;
     .letterspacing60();
 }
 
 // global navigation -------------------
 .global-nav a, .global-nav span {
     text-transform: uppercase;
+    color: @white;
 }
 
 // utility navigation -------------------
@@ -107,11 +112,23 @@
  
 
 // Component insitue
-.contentinfo .menu a {
-      color: @white;
+.contentinfo__utility-nav{
+    margin-bottom: 1em;
 }
-
+.contentinfo .menu li{
+    display: inline-block;
+    padding-right: 1em;
+    a {
+        color: @white;
+        font-size: 1em;
+        text-transform: uppercase;
+        &:hover{
+            background: none;
+            color: darken(@white, 25%);
+        }
+    }
+}
 // utility navigation -------------------
-.naviagtion .utility-nav {
-    margin-top: 1.5em;   
+.navigation__utility-nav {
+    .visually-hidden(); 
 }

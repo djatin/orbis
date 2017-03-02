@@ -30,7 +30,8 @@ section (semantic wrapper)
     padding: 0.75em;
 }
 
-.header__wrapper, .admin__wrapper, .wrapper--max-w {
+//.header__wrapper, .admin__wrapper, .wrapper--max-w {
+.header__wrapper, .admin__wrapper {
     .seven-eighths();
     max-width: 78em;
 }
@@ -41,7 +42,8 @@ section (semantic wrapper)
 
 .section__wrapper {
     //padding: 3em 0;
-    margin: 4.6875% 0;
+    //margin: 4.6875% 0;
+    margin: 0;
     padding: 0 4.6875%;
 }
 
@@ -54,6 +56,8 @@ section (semantic wrapper)
 // Modifiers
 .wrapper--page {
     position: relative;
+    max-width: 87.5em;
+    box-shadow: 0px -1px 3px #ccc;
     background-color: @bck-color-base;
     //IE6-7 hack for magin auto to work
     *text-align: center;
@@ -65,7 +69,12 @@ section (semantic wrapper)
     //IE6-7 because of hack we need to align it left
     *text-align: left;
 }
-
+.d-section--modification-5 .wrapper--max-w{
+    max-width: 52em;
+}
+.d-section--slideshow--text{
+    margin-top: 2em;
+}
 
 // Component in situ 
 

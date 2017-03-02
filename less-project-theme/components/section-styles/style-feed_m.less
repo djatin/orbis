@@ -77,6 +77,62 @@
     
 }
 
+.d-feed--style-2{
+    .d-feed__body{
+        .min-width(40em{
+            margin-right: -1%;
+        });
+    }
+    .o-tile{
+        margin-bottom: 1em;
+        .min-width(40em{
+            padding-right: 1%;
+            position: relative;
+            margin: 0;
+        });
+        .o-tile__body{
+            border: none;
+            text-align: left;
+            background: fade(@black, 50%);
+            .min-width(40em{
+                position: absolute;
+                width: 98%;
+                height: 100%;
+                p{
+                    max-height: 6.25em;
+                    overflow-y: hidden;
+                }
+            });
+            p{
+                margin-top: .5em;
+                .min-width(60em{
+                    margin-top: 1.5em;
+                    max-height: 7.5em;
+                });
+            }
+        }
+        .o-tile__btn{
+            margin: 0;
+            border: none;
+            .min-width(40em{
+                position: absolute;
+                width: 98%;
+                height: 100%;
+            });
+            a{
+                height: 100%;
+                display: block;
+                .min-width(40em{
+                    background: none;
+                    color: transparent;
+                });
+            }
+        }
+        &:hover{
+            opacity: .75;
+        }
+    }
+}
 
 /*// OVERFLOW SCROLL 
 
@@ -94,8 +150,7 @@
         right: 19.1%;
         bottom: 0;
         }
-    });
-    
+    });    
 }
 
 
@@ -107,7 +162,6 @@
         min-height: 24em;
         .one-sixth();
         min-width: 24em;
-
     &:before {
         width: 1px;
         height: auto;

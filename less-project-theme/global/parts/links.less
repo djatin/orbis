@@ -1,9 +1,10 @@
 // out: null
 /* Links =================================================== */
 a { 
-font-family: inherit;
-font-weight: inherit;
-color : @linkcolor; 
+    font-family: @font-stack__arial;
+    font-weight: inherit;
+    color : @linkcolor; 
+.transition(all @duration-promptly ease-in-out);
 
 &:visited {
     color : @linkcolor--visited;

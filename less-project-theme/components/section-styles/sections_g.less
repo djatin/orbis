@@ -25,9 +25,11 @@
 .d-section--alignment-center {
     text-align: center;   
 }
-
-
-
+.d-section--modification-1{
+    .o-splash__hgroup{
+        max-width: 34em;
+    }
+}
 // Component in situ 
 
 
@@ -40,4 +42,47 @@
 
 .d-section--style-2 .section__o-splash {
     background-color: @grey--dark-4;
+}
+.d-section--modification-4 .section__o-splash{
+    background: none;
+}
+
+.d-section—embellishment-1{
+    border-bottom: 1px solid @black;
+    position: relative;
+    padding: 1.5em 0 4em;
+    margin: 0 6.25% 4em;
+    &:after{
+        background: url(../img/plane.jpg) no-repeat center;
+        content: '';
+        display: block;
+        width: 100%;
+        height: 2em;
+        position: absolute;
+        bottom: -1em;
+    }
+}
+.d-section--modification-1{
+    .o-splash__wrapper{
+        &:before{
+            content: '';
+            height: 7em;
+            display: block;
+            background: url(../img/banner_icon.png) no-repeat top left;
+        }
+    }
+}
+.d-section--modification-2{
+    &:after{
+        content: '';
+        height: 5em;
+        display: block;
+        background: url(../img/info_down_icon.png) no-repeat center;
+    }
+}
+.d-section--modification-5{
+    margin-top: 3em;
+    &.d-section--alignment-center{
+        text-align: left;
+    }
 }

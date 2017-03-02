@@ -27,11 +27,21 @@
 }
 
 .o-media__body {
-    overflow: hidden;   
+    overflow: hidden;  
+    padding-bottom: .25em;
 }
   
 .media--object .o-media__body {
     margin-top: @baseline;
+}
+
+.o-media__gallery + .o-media__body{
+    .title{
+        font-size: 2em;
+        margin-top: 0;
+        padding-bottom: .25em;
+        border-bottom: 1px solid @black;
+    }
 }
 
 //elements in situe

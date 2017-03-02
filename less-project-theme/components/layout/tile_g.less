@@ -49,10 +49,14 @@
 }
 
 .o-tile__title {
-    .gamma--margin ();
-      text-transform: uppercase; 
+    font-size: 1.5em;
+    margin-top: .5em;
+    text-transform: uppercase; 
     font-weight: 600;
-    .letterspacing60();
+    a{
+        color: @white;
+        text-decoration: none;
+    }
 }
 
 .o-tile__subtitle {
@@ -63,8 +67,9 @@
 
 .o-tile__text {
     margin: 0 auto;
-    max-width: 24em;
-    color: @grey--light-4;   
+    //max-width: 24em;
+    color: @white;
+    font-size: 1.125em;
 }
 
 .o-tile__btn {

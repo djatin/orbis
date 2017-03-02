@@ -169,3 +169,47 @@
 
 //end @small_major
 });
+
+
+.contentinfo__connect{
+    .min-width(40em{
+        float: right;
+        max-width: 22em;
+    });
+    form{
+        max-width: 25em;
+        margin: 1em 0 0;
+        position:  relative;
+        font-family: @font-stack__arial;
+        .form-item{
+            font-size: 1.125em;
+            margin: 0;
+            input{
+                padding: .5em 8em .5em .5em;
+            }
+        }
+        .form-actions{
+            margin: 0;
+            input{
+                margin: 0;
+                border: none;
+                position: absolute;
+                top: 0;
+                right: 0;
+                font-size: 1.125em;
+                padding: .4em 1em;
+                background: #0d1d2c;
+            }
+        }
+        &:after{
+            content: '';
+            display: block;
+            .clear-both();
+        }
+    }
+}
+.min-width(40em{
+    .big-social-media__list{
+        float: right;
+    }
+});

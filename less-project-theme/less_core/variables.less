@@ -13,22 +13,28 @@
 @fall-back--serif: Georgia, serif;
 
 @font-stack__open: 'Open Sans', @fall-back--sans-serif;
+@font-stack__arial: 'Arial', @fall-back--sans-serif;
 @font-stack__codefont : Monaco, Courier New, monospace;
 
 
-@basefont : @font-stack__open;
+@basefont : @fall-back--serif;
 @basefontsize : 1em;
 @baseline : 1.5; // don't define a unit or things will not scale
 @baselineunit: (@baseline * 1em);
 
+@Blue : #00a3e0; //d-section--style-1
+@Yellow : #eada24; //d-section--style-2
+@Lightgrey : #b6b6b6; //d-section--style-3
+@Gunmetal : #253746; //d-section--style-4
+
 
 // 3. COLOUR 				==============================
 
-@basecolor : #008857;
+@basecolor : @Gunmetal;
 
 //@emergencybg : rgb(247, 105, 105); //#f76969
 @twitterbg : rgb(0,158,239); //#009eef 
-@footerbg : @grey--dark-4; //#2a2a2a
+@footerbg : @basecolor;
 @footertextcolor : @grey--light-1;
 
 @highlight--color-1 : rgb(52,152,219); // #3498DB a blue
@@ -51,14 +57,14 @@
 @grey--dark-3: rgb(74,71,71); //#4a4747
 @grey--dark-4: rgb(42,42,42); //#2a2a2a
 
-@black : rgb(0,19,20); // never use pure black 001314
+@black : rgb(0,0,0);
 
 // greys based on blacks
 @grey-color-05: lighten(@grey, 5%);
 @grey-color-10: lighten(@grey, 10%);
 @grey-color-20: lighten(@grey, 20%);
 @grey-color-30: lighten(@grey, 30%);
-@grey: rgb(135,135,135); // text grey #878787 OK for Headings 
+@grey: rgb(102,102,102); // text grey #666666 OK for Headings 
 @grey-dk-color-20: darken(@grey, 20%); // text grey this is accessible
 @grey-dk-color-70: darken(@grey, 70%);
 @grey-dk-color-80: darken(@grey, 80%);
