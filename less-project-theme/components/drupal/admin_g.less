@@ -50,11 +50,14 @@
         text-decoration: underline;
         &:hover {
             background: @linkcolor;
-            color: @white;
+            color: @textcolor !important;
         }
 }
 
 .tabs .active a {
     background: @basecolor;
-    color: @white;
+    color: @textcolor !important;
+}
+.tabs.secondary li a.active, .tabs.secondary li.active a, .tabs.secondary li a:hover{
+    color: @white !important;
 }

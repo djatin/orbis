@@ -22,7 +22,7 @@
 
 // For browser that cut the mustard and between 320px and 767px
 //@media only screen and (min-width: 20em) and (max-width: 47.9375em) {
-.min-width-max(20em; {  
+.min-width-max(1em; {  
 
     .toggle-control__text {
     .visually-hidden();   
@@ -42,9 +42,9 @@
         background-position: center center;
         background-repeat: no-repeat;
         &:hover, &:active, &:focus {
-          margin-top: 0.8125em;
-        margin-bottom: 0.6875em;
-         background-color: transparent;  
+            /*margin-top: 0.8125em;
+            margin-bottom: 0.6875em;
+            background-color: transparent;*/  
         }
     }
     
@@ -76,7 +76,7 @@
         margin: 0;
         width:@canvasdawerwidth; //264px
         min-height: 100%;
-        background: @whiteonblack;
+        background: @grey;
         //border-right: 1px solid darken(@whiteonblack, 5%);
         overflow: hidden;
         position: absolute;
@@ -131,7 +131,7 @@
     }
     // Shift nav to accomedate search
     .mustardo-navigation .navigation__global-nav {   
-            margin-top: 3.75em; //60px
+            margin-top: 0.75em;
     }
     
    

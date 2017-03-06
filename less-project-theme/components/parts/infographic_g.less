@@ -45,15 +45,17 @@ infographic__figcaption (wrapper for the text)
 .infographic__title {
     font-weight: 700;
     font-size: 2.25em;
+    margin-top: 0;
     text-transform: uppercase;
 }
 
 .infographic__text {
-    min-height: 6em;
     font-size: 1.25em;
     text-transform: uppercase;
     p{
         margin-top: 0;
+        font-size: 1.125em;
+        font-weight: 700;
         em{
             color: @Blue;
         }
@@ -70,6 +72,7 @@ infographic__figcaption (wrapper for the text)
 }
 
 .d-section--infographics, .d-section--infographics-2{
+    color: @Gunmetal;
     .hgroup__title{
         text-align: center;
         font-size: 1.5em;
@@ -93,6 +96,10 @@ infographic__figcaption (wrapper for the text)
     }
     .infographic__text{
         text-transform: none;
+        p{
+            font-size: 1em;
+            font-weight: 400;
+        }
     }
 }
 

@@ -24,6 +24,9 @@
 
 .d-section--alignment-center {
     text-align: center;   
+    .the-measure{
+        text-align: left;
+    }
 }
 .d-section--modification-1{
     .o-splash__hgroup{
@@ -68,21 +71,38 @@
             content: '';
             height: 7em;
             display: block;
-            background: url(../img/banner_icon.png) no-repeat top left;
+            background: url(../img/banner_logo/no-svg_logo.png) no-repeat top left;
+        }
+    }
+}
+.backgroundsize .d-section--modification-1{
+    .o-splash__wrapper{
+        &:before{
+            background-image: url(../img/banner_logo/no-svg_logo@x2.png);
+        }
+    }
+}
+.svg .d-section--modification-1{
+    .o-splash__wrapper{
+        &:before{
+            background-image: url(../img/banner_logo/svg_logo.svg);
         }
     }
 }
 .d-section--modification-2{
     &:after{
-        content: '';
-        height: 5em;
-        display: block;
         background: url(../img/info_down_icon.png) no-repeat center;
+        content: '';
+        display: block;
+        height: 5em;
     }
 }
 .d-section--modification-5{
     margin-top: 3em;
     &.d-section--alignment-center{
         text-align: left;
+    }
+    &.d-section—embellishment-1{
+        padding-bottom: 6.1375em;
     }
 }

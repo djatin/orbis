@@ -29,9 +29,7 @@
     line-height: 1.5;
     font-size: 1em;
     cursor: pointer;
-    background-color: @black;
-    background-color: fade(@black, 70%);
-    background-image:  url(../../common/img/global/bigmallet-ui-icons-sprite.png);
+    background-color: transparent;
     background-repeat:  no-repeat;
     color: transparent;
     top: 50%;
@@ -43,8 +41,7 @@
     appearance:         none;
     z-index: 450;
     &:hover, &:focus {
-        background-color: fade(@black, 80%);
-        color: transparent;
+        opacity: .8;
         outline: none;
         
     }
@@ -54,13 +51,14 @@
 }
 
 .slick-next {
-    background-position: -48px -384px;
-    
+    //background-position: -48px -384px;
+    background-image:  url(../img/next_arrow.png);
 }
 
 .slick-prev {
-    background-position: -2px -384px;
-    left: 0; // Site specific 
+    background-image:  url(../img/prev_arrow.png);
+    //background-position: -2px -384px;
+    left: -3em; // Site specific 
     &[dir="rtl"] {
         left: auto;
         right: 0;
@@ -68,7 +66,7 @@
 }
 
 .slick-next {
-    right: 0; // site specific
+    right: -3em; // site specific
     &[dir="rtl"] {
         left: 0;
         right: auto;
@@ -230,8 +228,9 @@
 
 .gallery ul {
     padding: 0;
-    margin: 0;
+    margin: 0 auto;
     list-style: none;
+    max-width: 90%;
 }
 
 .gallery__figure {
