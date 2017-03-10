@@ -72,8 +72,11 @@
     font-size: 1.125em;
     text-decoration: none;
     outline: 0;
-    &:active, &:focus, &.active, &.is-active, &:hover {
-        color: lighten(@basecolor,40%);
+    &:active, &:focus, &:hover {
+        color: #9cdbd9;
+    }
+    &.active, &.is-active{
+        color: #9BB8D3;
     }
     
 }
@@ -85,7 +88,7 @@
         color: @black;
         font-weight: 700;
         &:hover{
-            background: darken(@Yellow, 5%);
+            background: darken(@Yellow, 10%);
         }
     }
 }
@@ -117,7 +120,10 @@
 }
 .contentinfo .menu li{
     display: inline-block;
-    padding-right: 1em;
+    padding-right: 1.75em;
+    &.last{
+        padding-right: 0;
+    }
     a {
         color: @white;
         font-size: 1em;

@@ -48,6 +48,9 @@
     &.slick-disabled {
         opacity: @slick-opacity-not-active;
     }
+    .min-width-max(1em{
+        display: none !important; 
+    }39.9999em);
 }
 
 .slick-next {
@@ -230,7 +233,9 @@
     padding: 0;
     margin: 0 auto;
     list-style: none;
-    max-width: 90%;
+    .min-width(48em{
+        max-width: 90%;
+    });
 }
 
 .gallery__figure {
@@ -255,9 +260,13 @@
 .gallery .thumbnails li {
     margin-left: 1px;
     margin-right: 1px;
+    cursor: pointer;
+    &:hover{
+        opacity: .75;
+    }
 }
 
 .gallery .thumbnails li[class*='slick-center'] img, .gallery .thumbnails li[class*='slick-current'] img {
-            border: 4px solid @basecolor;   
+    border: 4px solid @basecolor;   
 }
 
